@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>Hey there, my name is HelperBot! 
+              I am here to assist students who are close to completing their computer science degrees. 
+              My specialty is discovering the right career choice for you. If you're ready to begin, I'll ask you some questions.
+    <button>
+    <text>I'm ready!</text>
+    <postback>start</postback>
+    </button>
+    
+    <button>
+    <text>I'm not ready</text>
+    <postback>exit</postback>
+    </button>
+    </template>
+  </category>
+  
+ <category>
+     <pattern>exit</pattern>
+     <template>Please come back when you are ready to explore career options</template>
+ </category>
+  
+<category>
+    <pattern>start</pattern>
+    
+    <template>Although creativity and analytical skills are needed in every field and career, do you consider yourself more creative, or more analytical?
+    <button>
+        <text>Creative</text>
+        <postback>creative</postback>
+    </button>
+    
+<button>
+    <text>Analytical</text>
+    <postback>analytical</postback>
+</button>
+
+</template>
+</category>
+
+<category>
+    <pattern>creative</pattern>
+    <template> Which do you prefer more: creating things virtually or physically? 
+        
+        
+        <button>
+            <text>Physically</text>
+            <postback>physical</postback>
+        </button>
+        
+        <button>
+            <text>Virtually</text>
+            <postback>virtual</postback>
+        </button>
+        
+    </template>
+</category>
+  
+  <category>
+      <pattern>physical</pattern>
+      <template> Would you rather design a new network from scratch, or take a more managerial approach to managing the network?
+          
+ <button>
+     <text>Design a new network</text>
+     <postback>architect</postback>
+ </button>
+          
+<button>
+    <text>Take a managerial approach</text>
+    <postback>systemsadmin</postback>
+</button>
+
+          
+      </template>
+  </category>
+  
+  <category>
+      <pattern>architect</pattern>
+      <template>You sound like the perfect candidate to become a computer network architect! To learn more:
+       https://www.bls.gov/ooh/computer-and-information-technology/computer-network-architects.htm#tab-1</template>
+  </category>
+
+<category>
+    <pattern>systemsadmin</pattern>
+    <template>You sound like the perfect candidate to become a network and computer systems administrator! To learn more: 
+    https://www.bls.gov/ooh/computer-and-information-technology/network-and-computer-systems-administrators.htm#tab-1</template>
+</category>
+
+
+<category>
+    <pattern>virtual</pattern>
+    <template>Would you rather create a program or a website?
+        
+        <button>
+            <text>A program</text>
+            <postback>software</postback>
+        </button>
+        
+        
+        <button>
+            <text>A website</text>
+            <postback>webdev</postback>
+        </button>
+        
+        
+    </template>
+</category>
+
+
+<category>
+    <pattern>software</pattern>
+    <template>You sound like the perfect candidate to become a software developer! To learn more:
+    https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm</template>
+</category>
+
+
+<category>
+    <pattern>webdev</pattern>
+    <template>You sound like the perfect candidate to become a web developer! To learn more: 
+    https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>analytical</pattern>
+    <template> Which do you prefer more: working with computers, or working with people?
+    
+    <button>
+        <text>People</text>
+        <postback>support</postback>
+    </button>
+    
+    <button>
+        <text>Computers</text>
+        <postback>computer</postback>
+    </button>
+        
+        
+        
+        
+    </template>
+</category>
+
+<category>
+    <pattern>support</pattern>
+    <template>You sound like the perfect candidate to become a computer support specialist! To learn more:
+    https://www.bls.gov/ooh/computer-and-information-technology/computer-support-specialists.htm</template>
+</category>
+
+
+
+<category>
+    <pattern>computer</pattern>
+    <template>Would you rather analyze cybersecurity risks, or help to make a business more productive?
+    
+    
+    <button>
+        <text>Cybersecurity</text>
+        <postback>cybersecurity</postback>
+    </button>
+    
+    <button>
+        <text>Help a business</text>
+        <postback>business</postback>
+    </button>
+    
+    
+    
+    </template>
+    
+</category>
+
+
+<category>
+    <pattern>cybersecurity</pattern>
+    <template>You sound like the perfect candidate to become an information security analyst! To learn more:
+    https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm</template>
+</category>
+
+<category>
+    <pattern>business</pattern>
+    <template>You sound like the perfect candidate to become a computer systems analyst! To learn more:
+    https://www.bls.gov/ooh/computer-and-information-technology/computer-systems-analysts.htm#tab-1</template>
+</category>
+</aiml>
